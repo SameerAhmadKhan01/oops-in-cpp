@@ -6,6 +6,29 @@ CONSTRUCTOR are special methods which are called automatically when an object is
 > it can either parametarised or non-parametarised!
 > Multiple constructor can be there but there should be difference in parameter as it should have different number of params
 > Constructor Can be Overloaded too
+
+# Different Types of constructor are as follows :
+ - parametarised constructor 
+ - non parametarised constructor
+ - copy constructor
+*/
+
+/*
+'this' pointer is a special pointer in C++ which points to the instance of the current object!
+SYNTAX to use it 
+(*this).prop
+this->prop
+*/
+
+
+/*
+COPY CONSTRUCTORS are used in C++ to copy the properties of one object to other if not defined explicitly C++ does it for us 'default copy constructor'
+-> Teacher t2("TEACHER2", "CSE", "ANALYSIS OF ALGORITHM", 50000);
+
+-> if we want to make a object t3 with all properties of t2 so we can take help of copy constructor
+
+> Teacher t3(t2);
+
 */
 
 #include <iostream>
@@ -41,6 +64,16 @@ public:
         this->dept = d;
         this->subjects = sb;
         this->salary = sal;
+    }
+
+
+    //COPY CONSTRUCTOR
+    Teacher(Teacher& obj){
+        cout<<"COPY CONSTRUCTOR CALLED"<<endl;
+        this->name = obj.name;
+        this->dept = obj.dept;
+        this->subjects = obj.subjects;
+        this->salary = obj.salary;
     }
 
     // METHODS
