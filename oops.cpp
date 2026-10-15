@@ -23,6 +23,8 @@ int main() {
     Teacher t1;
     Teacher t2;
     Teacher t3;
+
+    // setting values to the properties
     t1.name = "Sameer";
     t1.dept = "CSE";
     t1.subjects = "C++";
