@@ -76,6 +76,12 @@ public:
         this->salary = obj.salary;
     }
 
+    //Destructor
+    // it is also called automatically just like a constructror
+    ~Teacher(){
+        cout<<"Destructor is Called !\n";
+    }
+
     // METHODS
 
     void getInfo()
