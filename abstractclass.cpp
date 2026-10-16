@@ -2,10 +2,10 @@
 using namespace std;
     
 
-class car
+class car // atleast 1 pure virtual function means an abstract class , cant be instantiated but can have the ptrs with other class objects
 {
 public:
-	virtual void start()=0;
+	virtual void start()=0; // pure virutal functions
 };
 class innova:public car
 {
