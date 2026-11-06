@@ -1,1 +1,33 @@
+*.execat << 'EOF' > .gitignore
+# macOS junk
+.DS_Store
+.DS_Store?
+._*
+
+# Editor settings
+.vscode/
+
+# Build artifacts & symbols
+*.dSYM/
+*.out
+*.o
+*.app
+*.class
 *.exe
+
+# Extensionless binaries (macOS compiled executables)
+*
+!*.*
+!*/
+
+# Keep your source code
+!*.cpp
+!*.c
+!*.java
+!*.py
+!.gitignore
+
+# Python caches
+__pycache__/
+*.pyc
+EOF
